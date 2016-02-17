@@ -171,6 +171,7 @@ gulp.task('watch:all', function () {
     gulp.start('watch:jade');
     gulp.start('watch:js');
     gulp.start('watch:img');
+    gulp.start('watch:html');
 });
 
 
