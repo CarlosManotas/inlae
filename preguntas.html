@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>INLAE</title>
+  </head>
+  <body ng-app="myApp" class="">
+    <div class="preload">
+      <div class="ed-container abcenter">
+        <div class="ed-item abcenter">
+          <figure>
+            <img src="img/loading-ise.gif" alt="">
+          </figure>
+        </div>
+      </div>
+    </div>
+    <header id="header">
+      <div class="ed-container">
+        <div class="ed-item base-80 web-40 cross-center">
+          <figure><img src="img/logo-full.svg" class="logo"></figure>
+        </div>
+        <div class="ed-item hasta-web base-20 cross-center main-end">
+          <h2 class="icon-menu"></h2>
+        </div>
+        <div class="ed-item web-30"></div>
+        <div class="ed-item web-5 cross-center desde-web"><a href="#">
+            <p class="icon-facebook"></p></a></div>
+        <div class="ed-item web-5 cross-center desde-web"><a href="#">
+            <p class="icon-twitter"></p></a></div>
+        <div class="ed-item web-20 abcenter cross-center desde-web aparecer-derecha">
+          <h3>LLAMANOS AL</h3>
+          <h2> <span>(011) </span>5277-4997 </h2>
+        </div>
+      </div>
+    </header>
+    <nav id="nav">
+      <ul>
+        <div class="ed-container">
+          <div class="ed-item web-65 web-justify web-cross-center no-padding">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="institucion.html">INLAE</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="preguntas.html">Preguntas Frecuentes</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Acceso Alumnos</a><span class="icon-triangulo-abajo"></span></li>
+          </div>
+        </div>
+      </ul>
+    </nav>
+    <section id="seccion1">
+      <div class="ed-container justify">
+      	<div class="ed-item web-65 no-padding">
+      		<div class="Titulo-curso">
+	            <h2>Preguntas Frecuentes</h2>
+	         </div>
+      		<div class="preguntas">
+      			<h3 class="pregunta">¿Es reconocido el Instituto Latinoamericano de Educación?<span class="icon-abajo desde-tablet"></span></h3>
+      			<p class="aparece">Años de experiencia en la educación a distancia, avalan nuestro compromiso en la formación de profesionales altamente productivos y eficientes en la amplia cantidad de oficios y profesiones que abarcan nuestros cursos, por eso, el egresado de nuestro instituto se consolida, dentro del mercado laboral, como un profesional íntegro, exitoso y altamente demandado.</p>
+      			<h3 class="pregunta">¿El instituto otorga algún diploma o certificado?<span class="icon-abajo desde-tablet"></span></h3>
+      			<p>Tras aprobar la evaluación final, el INLAE te otorga un certificado personalizado que te acreditará la culminación del curso, y por ende, dejará constancia del conocimiento y la habilidad adquirida por el alumno. Éste podrá ser enviado vía web, o de ser necesario, de forma impresa con un pequeño recargo.</p>
+      			<h3 class="pregunta">¿Cómo son las evaluaciones?<span class="icon-abajo desde-tablet"></span></h3>
+      			<p>Las evaluaciones se realizan en la misma plataforma digital en que los alumnos tienen acceso a las clases. Éstas sirven para validar el desarrollo de las aptitudes adquiridas por el alumno durante el proceso de aprendizaje, generando mayor valor a la certificación emanada por el instituto. <br>Los cursos, generalmente, cuentan con más de una evaluación, dependiendo siempre de la extensión del contenido del curso, no obstante, el método de evaluación siempre es el mismo: el alumno debe responder cuestionarios al culminar cada tema, así como también una evaluación general al final del curso.</p>
+      			<h3 class="pregunta">¿Cómo son las clases?<span class="icon-abajo desde-tablet"></span></h3>
+      			<p>Cada clase está conformada por materiales en formato escrito y audiovisual, a los cuales el estudiante tiene acceso de forma ordenada y pedagógica, permitiendo un proceso de aprendizaje adaptado a las necesidades de cada uno de los alumnos. Este método garantiza el efectivo avance del alumno a través del curso.</p>
+      			<h3 class="pregunta">¿Qué resultados puedo esperar?<span class="icon-abajo desde-tablet"></span></h3>
+      			<p>La formación que ofrece el Instituto Latinoamericano de Estudios es, en cualquiera de sus distintos cursos, una fuerte y cimentada formación que, de forma clara y económica, le abrirá a nuestros egresados una amplia gama de oportunidades laborales. <br> Más del 90% de nuestros alumnos comenzaron un negocio, trabajo o carrera profesional, tras finalizar efectivamente uno de nuestros cursos.</p>
+      		</div>
+      	</div>
+        <div class="ed-item web-30 abcenter no-padding" ng-controller="formularioCtrl">
+          <form action="form.php" method="post" name="formularioTop" ng-submit="formularioTop.$valid">
+            <h3>CONOCE MÁS</h3>
+            <div class="input">
+              <input type="text"  name="nombre" ng-model="formData.nombre" placeholder="Nombre y Apellido" ng-minlength="2" required/>
+              <span class="showMe" ng-show="formularioTop.$dirty && formularioTop.nombre.$error.minlength">Tu Nombre es requerido</span>
+            </div>
+            <div class="input">
+              <input type="email"  name="email" ng-model="formData.email" placeholder="E-mail" ng-pattern="/^([0-9a-zA-Z_]([-.\w]*[0-9a-zA-Z_.-])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$/" required/>
+              <span class="showMe" ng-show="formularioTop.$dirty && formularioTop.email.$error.pattern">Colocá un mail válido</span>
+            </div>
+            <div class="input">
+              <input type="number"  name="cod" ng-model="formData.cod"  ng-maxlength="5" ng-minlength="2" placeholder="Cod. Área" required/>
+              <span class="showMe" ng-show="formularioTop.$dirty && formularioTop.cod.$error.minlength">El código es muy corto</span>
+              <span class="showMe" ng-show="formularioTop.$dirty && formularioTop.cod.$error.maxlength">El código es muy largo</span>
+            </div>
+            <div class="input">
+              <input type="number"  name="telefono" ng-model="formData.telefono" ng-minlength="6" placeholder="Teléfono" required/>
+              <span class="showMe" ng-show="formularioTop.$dirty && formularioTop.telefono.$error.minlength">Colocá un teléfono válido</span>
+            </div>
+            <p>seleccione su curso de Interés</p>
+            <div class="input">
+              <select id="select" ng-model="formData.select" name="select" required>
+                <option value="" disabled selected>Seleccionar</option>
+                <option value="2">Apicultura</option>
+                <option value="3">Analista en Recursos Humanos</option>
+                <option value="4">Analista en Gestión Rural</option>
+                <option value="5">Asistente en Comercio Exterior</option>
+                <option value="6">Asistente de Marketing</option>
+                <option value="7">Asistente Financiero</option>
+                <option value="8">Atención al cliente</option>
+                <option value="9">Mecánica de vehículos</option>
+                <option value="10">Educación especial</option>
+                <option value="11">Conservas</option>
+                <option value="12">Gestión contable y auditoría empresarial</option>
+                <option value="13">Gestión de ventas</option>
+                <option value="14">Recreación y Tiempo libre </option>
+                <option value="15">Especialista en Aluminio</option>
+                <option value="16">Carpintería </option>
+                <option value="17" >Fotografía</option>
+                <option value="18">Contabilidad</option>
+                <option value="19">Refrigeración</option>
+                <option value="20">Albañilería</option>
+                <option value="21">Instalaciones Sanitarias y Gas</option>
+                <option value="22">Peluquería</option>
+                <option value="23">Secretariado Ejecutivo</option>
+                <option value="24">Repostería</option>
+                <option value="25">Maquillaje</option>
+                <option value="26">Técnico Soldador</option>
+                <option value="27">Técnico Electricista</option>
+                <option value="28">Cocina</option>
+                <option value="29">Jardinería</option>
+                <option value="30">Asistente Contable</option>
+                <option value="31">Inglés</option>
+                <option value="32">Administración de Empresas</option>
+                <option value="33">Control de Plagas en Jardinería</option>
+                <option value="34">Creación de Páginas web</option>
+                <option value="35">Decoración artesanal</option>
+                <option value="36">Diseñador gráfico</option>
+                <option value="37">Diseño de indumentaria</option>
+                <option value="38">Masajes y Spa</option>
+                <option value="39">Productor de Seguros</option>
+                <option value="40">Profesional en estética</option>
+                <option value="41">Profesional en turismo y hotelería</option>
+                <option value="42">Reparación de la electrónica</option>
+                <option value="43">Reparación en Joyería </option>
+              </select>
+            </div>
+            <div class="input">      
+              <input type="submit" ng-show="formularioTop.$valid" ng-click="submitForm(formData)" value="QUIERO INFORMARME"/>
+              <input type="submit" ng-show="formularioTop.$invalid" value="COMPLETÁ LOS DATOS" ng-disabled="formularioTop.$invalid"/>
+            </div>
+            <div class="input input-flex">
+              <figure><img src="img/candado.png" alt=""></figure>
+              <p>Jamás compartiremos tu información personal con nadie, sólo la utilizaremos para responder tu consulta en INLAE.</p>
+            </div>
+          </form>
+      		<div class="llamanosAhora desde-web">
+      			<h3>LLAMANOS AL</h3>
+      			<h2><span>(011) </span> 5277-4997</h2>
+            	<img src="img/telefono.png" alt="telefono">
+      		</div>
+        </div>
+      </div>
+    </section>
+    <br>
+    <hr>
+    <footer id="footer">
+      <div class="ed-container">
+        <div class="ed-item abcenter">
+          <h3>LLAMANOS AL</h3>
+          <h2> <span>(011) </span>5277-4997</h2>
+          <p>INLAE - Instituto Latinoamericano de Educación - Términos, Condiciones y Política de Privacidad</p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/isMobile.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
