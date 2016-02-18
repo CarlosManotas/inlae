@@ -41,9 +41,9 @@
         <div class="ed-container">
           <div class="ed-item web-65 web-justify web-cross-center no-padding">
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="#">INLAE</a></li>
-            <li><a href="#">Cursos</a></li>
-            <li><a href="#">Preguntas Frecuentes</a></li>
+            <li><a href="institucion.html">INLAE</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="preguntas.html">Preguntas Frecuentes</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Acceso Alumnos</a><span class="icon-triangulo-abajo"></span></li>
           </div>
@@ -83,7 +83,7 @@
             </div>
             <p>seleccione su curso de Interés</p>
             <div class="input">
-              <select id="select" ng-model="formData.select" name="select" required>
+              <select id="select" ng-model="formData.select" name="select" >
                 <option value="17" disabled >Seleccionar</option>
                 <option value="2">Apicultura</option>
                 <option value="3">Analista en Recursos Humanos</option>
@@ -148,7 +148,6 @@
       		<p>Brindar al participante las técnicas e interpretaciones necesarias para ser un experto en obras de albañilería, e incorporarse en el mercado laboral de la edificación de manera rápida y efectiva.</p>
       		<h2>Programa de estudio</h2>
       		<h3>Módulo I: Fábricas de Albañilería</h3>
-      		<hr>
       		<li>Morteros y pastas en albañilería y revestimientos</li>
       		<li>Hormigones</li>
       		<li>Elaboración de morteros y materiales de rejuntado</li>
@@ -161,7 +160,6 @@
       		<li>Seguridad en fábricas de albañilería</li>
       		<br>
       		<h3>Módulo II: Operaciones auxiliares de acabados rígidos y urbanización</h3>
-      		<hr>
       		<li>Labores auxiliares de obra</li>
       		<li>Acondicionamiento de tajos</li>
       		<li>Abastecimiento de tajos y acopios</li>
@@ -173,27 +171,27 @@
       		<li>Preparación de soportes para revestir</li>
       		<br>
       		<h3>Módulo III: Tratamientos auxiliares</h3>
-      		<hr>
       		<li>Trabajos de preparación de piezas</li>
       		<li>Ejecución de trabajos auxiliares</li>
       		<li>Ejecución de bordes de confinamiento y adoquinados</li>
       		<li>Ejecución de pavimentos de hormigón impreso</li>
       	</div>
-      	<div class="ed-item web-30 desde-web web-offset-5">
+      	<div class="ed-item web-30 no-padding desde-web web-offset-5">
       		<div class="llamanos">
       			<h3>LLAMANOS AL</h3>
       			<h2><span>(011) </span> 5277-4997</h2>
+            <img src="img/telefono.png" alt="telefono">
       		</div>
       		<h2>Cursos Relacionados</h2>
-      		<div class="cursos-relacionados" ng-controller="cursos">
-      			<div class="ed-item aparecer-arriba" ng-repeat="relacionado in relacionados">
-		          <a ng-href="{{relacionado.link}}">
+      		<div class="cursos-relacionados" ng-controller="todosCursos">
+      			<div class="ed-item aparecer-arriba" ng-repeat="oficio in oficios  | orderBy:'name':true | limitTo: 3">
+		          <a ng-href="{{oficio.link}}">
 		            <figure>
-		              <img ng-src="{{relacionado.images}}">
+		              <img ng-src="{{oficio.images}}">
 		            </figure>
 		            <p class="aparecer-izquierda">
 		              <span class="icono-logo"></span> 
-		              {{relacionado.name}} 
+		              {{oficio.name}} 
 		            </p>
 		          </a>
 		        </div>
@@ -225,7 +223,7 @@
             </div>
             <p>seleccione su curso de Interés</p>
             <div class="input aparecer-arriba">
-              <select id="select" ng-model="formData.select" name="select" required>
+              <select id="select" ng-model="formData.select" name="select">
                 <option value="" selected="selected">Fotografía</option>
                 <option value="2">Apicultura</option>
                 <option value="3">Analista en Recursos Humanos</option>

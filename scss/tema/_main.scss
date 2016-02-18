@@ -10,11 +10,17 @@
 		&.fotografia{
 			background-image: url(../img/small/fotografia.jpg);
 		}
+		&.inlae{
+			background-image: url(../img/small/institucion.jpg);
+		}
 		
 		@include desde(movil){
 			background-image: url("../img/home.jpg");
 			&.fotografia{
 				background-image: url(../img/fotografia.jpg);
+			}
+			&.inlae{
+				background-image: url(../img/institucion.jpg);
 			}
 		}
 	}
@@ -54,6 +60,53 @@
 					top:0;
 				}
 			}
+		}
+	}
+	.llamanosAhora{
+		position:relative;
+		background: linear-gradient(to right, #44c1c2 0%,#036766 100%);
+		text-align: center;
+		h2{
+			color:#fff100;
+			margin-top: 0;
+			span{
+				font-size: .8em;
+			}
+		}
+		h3{
+			color:white;
+			margin-bottom: 0;
+			&:after{
+				height:0;
+			}
+		}
+		&:after,&:before{
+			content:"";
+			position:absolute;
+		}
+		&:after{
+			width:150px;
+			height:63px;
+			background: linear-gradient(to right, #44c1c2 0%,#036766 100%);
+			bottom:-20px;
+			right: -100px;
+		}
+		&:before{
+			width: 0;
+			height:0;
+			top:-20px;
+			right: 0px;
+			border-right: 0 solid  transparent;
+			border-top: 20px solid transparent;
+			border-left: 50px solid transparent;
+			border-bottom: 20px solid #44c1c2;
+		}
+		img[alt="telefono"]{
+			position:absolute;
+			max-height:58px;
+			right:-45px;
+			top:23px;
+			z-index: 999;
 		}
 	}
 }
@@ -115,6 +168,10 @@ form{
 				text-shadow: 2px 2px 4px rgba(0,0,0,.8);
 				box-shadow: 3px 4px 4px rgba(0,0,0,.5);
 			}
+			&[value="COMPLETÁ LOS DATOS"]{
+				background: #929393;
+				cursor: not-allowed;
+			}
 		}
 		&-flex{
 			display:flex;
@@ -154,9 +211,82 @@ form{
 		box-shadow: 3px 4px 4px rgba(0,0,0,.5);
 	}
 }
+.blue{
+	color:$colorblue;
+}
+.margen-top{
+	margin-top:24px;
+}
 #seccion4{
 	h2{
 		color:$colorred;
+	}
+	a p{
+			padding-left: 3em;
+			margin-bottom: 2em;
+	}
+	h3{
+		color:$colorblue;
+		position:relative;
+		&:after{
+			position:absolute;
+			content:"";
+			width: 100%;
+			height:1px;
+			background: $colorblue;
+			bottom:-.5em;
+			left:0;
+		}
+	}
+	li:last-child{
+		margin-bottom: 2em;
+	}
+	.llamanos{
+		position:relative;
+		background: linear-gradient(to right, #44c1c2 0%,#036766 100%);
+		text-align: center;
+		h2{
+			color:#fff100;
+			margin-top: 0;
+			span{
+				font-size: .8em;
+			}
+		}
+		h3{
+			color:white;
+			margin-bottom: 0;
+			&:after{
+				height:0;
+			}
+		}
+		&:after,&:before{
+			content:"";
+			position:absolute;
+		}
+		&:after{
+			width:150px;
+			height:63px;
+			background: linear-gradient(to right, #44c1c2 0%,#036766 100%);
+			bottom:-20px;
+			right: -100px;
+		}
+		&:before{
+			width: 0;
+			height:0;
+			top:-20px;
+			right: 0px;
+			border-right: 0 solid  transparent;
+			border-top: 20px solid transparent;
+			border-left: 50px solid transparent;
+			border-bottom: 20px solid #44c1c2;
+		}
+		img[alt="telefono"]{
+			position:absolute;
+			max-height:58px;
+			right:-45px;
+			top:23px;
+			z-index: 999;
+		}
 	}
 }
 .form-bottom{
@@ -277,4 +407,45 @@ input[type="submit"]:disabled {
 	border: 2px solid rgba(255,255,255,.3);
 	font-size:1.2em;
 	margin-top: .8em;
+}
+
+.preguntas{
+	margin-bottom: 5em;
+	.pregunta{
+		width: 100%;
+		background: $colorblue;
+		color:white;
+		line-height: 2;
+		padding-left: 1em;
+		font-weight: $normal;
+		display:flex;
+		justify-content:space-between;
+		cursor:pointer;
+		margin-bottom: 0;
+		span{
+			display:inline-block;
+			margin-right: .8em;
+		}
+	}
+	p{
+		padding: 0 .8em;
+		height:0;
+		overflow:hidden;
+		transition:all .4s;
+
+		&.aparece{
+			height:auto;
+			transition:all .4s;
+			margin-top: .5em;
+			@include desde(movil){
+				height:250px;
+			}
+			@include desde(tablet){
+				height:160px;
+			}
+			@include desde(web){
+				height:180px;
+			}
+		}
+	}
 }

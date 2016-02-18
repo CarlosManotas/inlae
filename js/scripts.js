@@ -4,7 +4,15 @@ jQuery(document).ready(function($){
     var $dinamico = $("#movil-off");
     var $paraBtn = $(".btn-llamar");
     var $preload = $(".preload");
-    $preload.hide();
+    var $btnPreguntas = $(".preguntas");
+    window.onload = function() {
+	  $preload.hide();
+	};
+    $btnPreguntas.on("click", "h3" ,function(){
+    	t = $(this);
+    	t.parent().find(".aparece").removeClass("aparece");
+    	t.next().addClass("aparece");
+    });
     $btnMenu.on("click",function(){
     	$navegador.toggleClass("mostrar");
     	$navegador.find("li").toggleClass("opacidad");
@@ -15,7 +23,7 @@ jQuery(document).ready(function($){
 
 	    if (isMobile.apple.phone || isMobile.android.phone || isMobile.windows_phone) {
 	        $dinamico.remove();
-	        $paraBtn.append('<a href="tel:+5411527749971"><button class="icon-telefono espacio btn-gracias">LLAMANOS!</button></a>');
+	        $paraBtn.append('<a href="tel:+541152774997"><button class="icon-telefono espacio btn-gracias">LLAMANOS!</button></a>');
       	}
 	    
 	});

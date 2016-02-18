@@ -41,9 +41,9 @@
         <div class="ed-container">
           <div class="ed-item web-65 web-justify web-cross-center no-padding">
             <li><a href="#">Inicio</a></li>
-            <li><a href="#">INLAE</a></li>
-            <li><a href="#">Cursos</a></li>
-            <li><a href="#">Preguntas Frecuentes</a></li>
+            <li><a href="institucion.html">INLAE</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="preguntas.html">Preguntas Frecuentes</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Acceso Alumnos</a><span class="icon-triangulo-abajo"></span></li>
           </div>
@@ -145,44 +145,47 @@
       </div>
     </section>
     <section id="seccion2">
-      <div class="ed-container" ng-controller="cursos">
+      <div class="ed-container" ng-controller="todosCursos">
         <div class="ed-item">
           <h2>OFICIOS Y PROFESIONES</h2>
         </div>
-        <div class="ed-item tablet-25 movil-50 aparecer-arriba" ng-repeat="producto in productos">
-          <a ng-href="{{producto.link}}">
+        <div class="ed-item tablet-25 movil-50 aparecer-arriba" ng-repeat="oficio in oficios | orderBy:'name':false | limitTo: 8 ">
+          <a ng-href="{{oficio.link}}">
             <figure>
-              <img ng-src="{{producto.images}}">
+              <img ng-src="{{oficio.images}}">
             </figure>
             <p class="aparecer-izquierda">
               <span class="icono-logo"></span> 
-              {{producto.name}} 
+              {{oficio.name}} 
             </p>
           </a>
         </div>
         <div class="ed-item abcenter">
-          <button>VER MÁS CURSOS</button>
+          <a href="cursos.html"><button>VER MÁS CURSOS</button></a>
           <hr>
         </div>
       </div>
     </section>
     <section id="seccion3">
-      <div class="ed-container" ng-controller="cursos">
+      <div class="ed-container" ng-controller="todosCursos">
         <div class="ed-item">
           <h2>ADMINISTRATIVO Y EMPRESARIAL</h2>
         </div>
-        <div class="ed-item tablet-25 movil-50 aparecer-arriba" ng-repeat="curso in cursos">
-          <a ng-href="{{curso.link}}">
+        <div class="ed-item tablet-25 movil-50 aparecer-arriba" ng-repeat="administrativo in administrativos | orderBy:'name':false | limitTo: 8">
+          <a ng-href="{{administrativo.link}}">
             <figure>
-              <img ng-src="{{curso.images}}">
+              <img ng-src="{{administrativo.images}}">
             </figure>
             <p class="aparecer-izquierda">
               <span class="icono-logo"></span> 
-              {{curso.name}} 
+              {{administrativo.name}} 
             </p>
           </a>
         </div>
-          <button>VER MÁS CURSOS</button>
+        <div class="ed-item abcenter">
+          <a href="cursos.html#seccion3"><button>VER MÁS CURSOS</button></a>
+        </div>
+          
         </div>
       </div>
     </section>

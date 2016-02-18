@@ -2851,11 +2851,15 @@ figure {
   background-size: cover; }
   #seccion1 figure.figure-home.fotografia {
     background-image: url(../img/small/fotografia.jpg); }
+  #seccion1 figure.figure-home.inlae {
+    background-image: url(../img/small/institucion.jpg); }
   @media screen and (min-width: 480px) {
     #seccion1 figure.figure-home {
       background-image: url("../img/home.jpg"); }
       #seccion1 figure.figure-home.fotografia {
-        background-image: url(../img/fotografia.jpg); } }
+        background-image: url(../img/fotografia.jpg); }
+      #seccion1 figure.figure-home.inlae {
+        background-image: url(../img/institucion.jpg); } }
 
 #seccion1 .Titulo-curso {
   text-transform: uppercase; }
@@ -2898,6 +2902,45 @@ figure {
       position: absolute; }
       #seccion1 .llamanos h2 span:before {
         top: 0; }
+
+#seccion1 .llamanosAhora {
+  position: relative;
+  background: linear-gradient(to right, #44c1c2 0%, #036766 100%);
+  text-align: center; }
+  #seccion1 .llamanosAhora h2 {
+    color: #fff100;
+    margin-top: 0; }
+    #seccion1 .llamanosAhora h2 span {
+      font-size: .8em; }
+  #seccion1 .llamanosAhora h3 {
+    color: white;
+    margin-bottom: 0; }
+    #seccion1 .llamanosAhora h3:after {
+      height: 0; }
+  #seccion1 .llamanosAhora:after, #seccion1 .llamanosAhora:before {
+    content: "";
+    position: absolute; }
+  #seccion1 .llamanosAhora:after {
+    width: 150px;
+    height: 63px;
+    background: linear-gradient(to right, #44c1c2 0%, #036766 100%);
+    bottom: -20px;
+    right: -100px; }
+  #seccion1 .llamanosAhora:before {
+    width: 0;
+    height: 0;
+    top: -20px;
+    right: 0px;
+    border-right: 0 solid  transparent;
+    border-top: 20px solid transparent;
+    border-left: 50px solid transparent;
+    border-bottom: 20px solid #44c1c2; }
+  #seccion1 .llamanosAhora img[alt="telefono"] {
+    position: absolute;
+    max-height: 58px;
+    right: -45px;
+    top: 23px;
+    z-index: 999; }
 
 span.icono-logo {
   position: relative;
@@ -2949,6 +2992,9 @@ form {
         font-size: 1.2em;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
         box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.5); }
+      form .input input[value="COMPLETÁ LOS DATOS"], form .input select[value="COMPLETÁ LOS DATOS"] {
+        background: #929393;
+        cursor: not-allowed; }
     form .input-flex {
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -2981,8 +3027,72 @@ form {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
   box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.5); }
 
+.blue {
+  color: #3ca3b3; }
+
+.margen-top {
+  margin-top: 24px; }
+
 #seccion4 h2 {
   color: #ea2026; }
+
+#seccion4 a p {
+  padding-left: 3em;
+  margin-bottom: 2em; }
+
+#seccion4 h3 {
+  color: #3ca3b3;
+  position: relative; }
+  #seccion4 h3:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #3ca3b3;
+    bottom: -.5em;
+    left: 0; }
+
+#seccion4 li:last-child {
+  margin-bottom: 2em; }
+
+#seccion4 .llamanos {
+  position: relative;
+  background: linear-gradient(to right, #44c1c2 0%, #036766 100%);
+  text-align: center; }
+  #seccion4 .llamanos h2 {
+    color: #fff100;
+    margin-top: 0; }
+    #seccion4 .llamanos h2 span {
+      font-size: .8em; }
+  #seccion4 .llamanos h3 {
+    color: white;
+    margin-bottom: 0; }
+    #seccion4 .llamanos h3:after {
+      height: 0; }
+  #seccion4 .llamanos:after, #seccion4 .llamanos:before {
+    content: "";
+    position: absolute; }
+  #seccion4 .llamanos:after {
+    width: 150px;
+    height: 63px;
+    background: linear-gradient(to right, #44c1c2 0%, #036766 100%);
+    bottom: -20px;
+    right: -100px; }
+  #seccion4 .llamanos:before {
+    width: 0;
+    height: 0;
+    top: -20px;
+    right: 0px;
+    border-right: 0 solid  transparent;
+    border-top: 20px solid transparent;
+    border-left: 50px solid transparent;
+    border-bottom: 20px solid #44c1c2; }
+  #seccion4 .llamanos img[alt="telefono"] {
+    position: absolute;
+    max-height: 58px;
+    right: -45px;
+    top: 23px;
+    z-index: 999; }
 
 .form-bottom {
   background: #d1d2d4; }
@@ -3114,3 +3224,42 @@ input[type="submit"]:disabled {
   border: 2px solid rgba(255, 255, 255, 0.3);
   font-size: 1.2em;
   margin-top: .8em; }
+
+.preguntas {
+  margin-bottom: 5em; }
+  .preguntas .pregunta {
+    width: 100%;
+    background: #3ca3b3;
+    color: white;
+    line-height: 2;
+    padding-left: 1em;
+    font-weight: 400;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    cursor: pointer;
+    margin-bottom: 0; }
+    .preguntas .pregunta span {
+      display: inline-block;
+      margin-right: .8em; }
+  .preguntas p {
+    padding: 0 .8em;
+    height: 0;
+    overflow: hidden;
+    transition: all .4s; }
+    .preguntas p.aparece {
+      height: auto;
+      transition: all .4s;
+      margin-top: .5em; }
+      @media screen and (min-width: 480px) {
+        .preguntas p.aparece {
+          height: 250px; } }
+      @media screen and (min-width: 768px) {
+        .preguntas p.aparece {
+          height: 160px; } }
+      @media screen and (min-width: 1024px) {
+        .preguntas p.aparece {
+          height: 180px; } }
