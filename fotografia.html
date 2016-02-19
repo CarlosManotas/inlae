@@ -184,7 +184,7 @@
       		</div>
       		<h2>Cursos Relacionados</h2>
       		<div class="cursos-relacionados" ng-controller="todosCursos">
-      			<div class="ed-item aparecer-arriba" ng-repeat="oficio in oficios  | orderBy:'name':true | limitTo: 3">
+      			<div class="ed-item aparecer-arriba" ng-repeat="oficio in inlae  | orderBy:'name':true | filter:{relacion:'10'}">
 		          <a ng-href="{{oficio.link}}">
 		            <figure>
 		              <img ng-src="{{oficio.images}}">
