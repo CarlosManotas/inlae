@@ -1,0 +1,119 @@
+ <section id="seccion1">
+      <div class="ed-container justify">
+        <div class="ed-item web-65 no-padding">
+		  <div class="Titulo-curso">
+            <h2>INLAE</h2>
+          </div>
+          <figure class="figure-home inlae"></figure>
+        </div>
+        <div class="ed-item abcenter cross-center hasta-web">
+          <div class="btn-llamar aparecer-arriba"></div>
+        </div>
+        <div class="ed-item web-30 abcenter no-padding" ng-controller="formularioCtrl">
+          <form action="form.php" method="post" name="formularioTop" ng-submit="formularioTop.$valid">
+            <h3>CONOCE MÁS</h3>
+            <div class="input">
+              <input type="text"  name="nombre" ng-model="formData.nombre" placeholder="Nombre y Apellido" ng-minlength="2" required/>
+              <span class="showMe" ng-show="formularioTop.$dirty && formularioTop.nombre.$error.minlength">Tu Nombre es requerido</span>
+            </div>
+            <div class="input">
+              <input type="email"  name="email" ng-model="formData.email" placeholder="E-mail" ng-pattern="/^([0-9a-zA-Z_]([-.\w]*[0-9a-zA-Z_.-])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$/" required/>
+              <span class="showMe" ng-show="formularioTop.$dirty && formularioTop.email.$error.pattern">Colocá un mail válido</span>
+            </div>
+            <div class="input">
+              <input type="number"  name="cod" ng-model="formData.cod"  ng-maxlength="5" ng-minlength="2" placeholder="Cod. Área" required/>
+              <span class="showMe" ng-show="formularioTop.$dirty && formularioTop.cod.$error.minlength">El código es muy corto</span>
+              <span class="showMe" ng-show="formularioTop.$dirty && formularioTop.cod.$error.maxlength">El código es muy largo</span>
+            </div>
+            <div class="input">
+              <input type="number"  name="telefono" ng-model="formData.telefono" ng-minlength="6" placeholder="Teléfono" required/>
+              <span class="showMe" ng-show="formularioTop.$dirty && formularioTop.telefono.$error.minlength">Colocá un teléfono válido</span>
+            </div>
+            <p>seleccione su curso de Interés</p>
+            <div class="input">
+              <select id="select" ng-model="formData.select" name="select" required>
+                <option value="" disabled selected>Seleccionar</option>
+                <option value="2">Apicultura</option>
+                <option value="3">Analista en Recursos Humanos</option>
+                <option value="4">Analista en Gestión Rural</option>
+                <option value="5">Asistente en Comercio Exterior</option>
+                <option value="6">Asistente de Marketing</option>
+                <option value="7">Asistente Financiero</option>
+                <option value="8">Atención al cliente</option>
+                <option value="9">Mecánica de vehículos</option>
+                <option value="10">Educación especial</option>
+                <option value="11">Conservas</option>
+                <option value="12">Gestión contable y auditoría empresarial</option>
+                <option value="13">Gestión de ventas</option>
+                <option value="14">Recreación y Tiempo libre </option>
+                <option value="15">Especialista en Aluminio</option>
+                <option value="16">Carpintería </option>
+                <option value="17" >Fotografía</option>
+                <option value="18">Contabilidad</option>
+                <option value="19">Refrigeración</option>
+                <option value="20">Albañilería</option>
+                <option value="21">Instalaciones Sanitarias y Gas</option>
+                <option value="22">Peluquería</option>
+                <option value="23">Secretariado Ejecutivo</option>
+                <option value="24">Repostería</option>
+                <option value="25">Maquillaje</option>
+                <option value="26">Técnico Soldador</option>
+                <option value="27">Técnico Electricista</option>
+                <option value="28">Cocina</option>
+                <option value="29">Jardinería</option>
+                <option value="30">Asistente Contable</option>
+                <option value="31">Inglés</option>
+                <option value="32">Administración de Empresas</option>
+                <option value="33">Control de Plagas en Jardinería</option>
+                <option value="34">Creación de Páginas web</option>
+                <option value="35">Decoración artesanal</option>
+                <option value="36">Diseñador gráfico</option>
+                <option value="37">Diseño de indumentaria</option>
+                <option value="38">Masajes y Spa</option>
+                <option value="39">Productor de Seguros</option>
+                <option value="40">Profesional en estética</option>
+                <option value="41">Profesional en turismo y hotelería</option>
+                <option value="42">Reparación de la electrónica</option>
+                <option value="43">Reparación en Joyería </option>
+              </select>
+            </div>
+            <div class="input">      
+              <input type="submit" ng-show="formularioTop.$valid" ng-click="submitForm(formData)" value="QUIERO INFORMARME"/>
+              <input type="submit" ng-show="formularioTop.$invalid" value="COMPLETÁ LOS DATOS" ng-disabled="formularioTop.$invalid"/>
+            </div>
+            <div class="input input-flex">
+              <figure><img src="img/candado.png" alt=""></figure>
+              <p>Jamás compartiremos tu información personal con nadie, sólo la utilizaremos para responder tu consulta en INLAE.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section id="seccion4">
+      <div class="ed-container">
+      	<div class="ed-item web-65 no-padding margen-top">
+      		<p><span class="blue">El Instituto Latinoamericano de Educación es una escuela especializada en la formación a distancia,</span> la cual se apoya en recursos de enseñanza online, para lograr el desarrollo profesional e integral de cada uno de sus alumnos.<br><span class="blue">Con nosotros lograrás, desde la comodidad de tu computador o móvil, desarrollar conocimientos y habilidades en distintas especializaciones,</span> cuya alta relevancia en la actualidad te ofrecerá una inmejorable oportunidad de trabajo</p>
+      		<p class="blue">Las oportunidades están al alcance de tus manos porque:</p>
+      		<ul>
+      			<li>Nuestro método de enseñanza es práctico y didáctico, ya que consta de clases en video y en texto, además de la atención constante de nuestros asesores educativos.</li>
+	      		<li>Nuestros cursos abordan temáticas importantes e imprescindibles para el mundo laboral de nuestros días.</li>
+	      		<li>Nuestros contenidos se encuentran en un constante proceso de actualización, proporcionando a nuestros alumnos los conocimientos, avances y desarrollos de la industria en la cual incursionan.</li>
+	      		<li>Nuestras clases en video están dictadas por profesionales de amplia trayectoria y reconocimiento en sus profesiones, lo cual te asegura, además de una sólida base teórica, un invaluable cúmulo de experiencia laborales.</li>
+	      		<li>Nuestro método de enseñanza entiende las particularidades de la vida de cada persona, por tanto, te permite estudiar y aprender al ritmo de tu vida, logrando un desarrollo profesional y humano bien cimentado.</li>
+	      		<li>Nuestra amplia oferta de cursos se adapta a las necesidades específicas de todos los alumnos que desean crecer profesionalmente.</li>
+	      		<li>Nuestra plataforma de enseñanza rompe con las limitaciones físicas de la educación presencial, lo cual te permite regresar o avanzar constantemente a conceptos necesarios para la comprensión de las clases.</li>
+      		</ul>
+	      		
+      		<p class="blue">Estudia lo que quieras, cómo quieras y cuándo quieras.</p>
+      		<br>
+      	</div>
+      	<div class="ed-item web-30 no-padding desde-web web-offset-5">
+      		<div class="llamanos">
+      			<h3>LLAMANOS AL</h3>
+      			<h2><span>(011) </span> 5277-4997</h2>
+            	<img src="img/telefono.png" alt="telefono">
+      		</div>
+      	</div>
+      </div>
+      <hr>
+    </section>

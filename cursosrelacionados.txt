@@ -1,0 +1,203 @@
+1) Apicultura:
+	-Jardinería
+	-Control de plagas en jardinería
+	-Analista en Gestión Rural
+2) Analista en Gestión Rural:
+	- Jardinería
+	- Apicultura
+	- Control de plagas en Jardinería
+3) Jardinería:
+	- Control de plagas en jardinería
+	- Apicultura
+	- Analista en Gestión Rural
+4) Control de plagas en jardinería:
+	- Jardinería
+	- Apicultura
+	- Analista en Gestión Rural
+
+///////////////////////////////////////////////////////////	
+///////////////////////////////////////////////////////////
+
+5) Analista en Recursos Humanos:
+	-Asistente Contable
+	-Administración de Empresas
+	-Secretariado Ejecutivo 
+6) Administración de Empresas:
+	- Secretariado Ejecutivo
+	- Asistente Contable
+	- Analista en Recursos Humanos
+7) Asistente contable:
+	- Administración de Empresas
+	- Secretariado Ejecutivo
+	- Analista en Recursos Humanos
+8) Secretariado Ejecutivo:
+	- Asistente Contable
+	- Administración de Empresas
+	- Analista en Recursos Humanos
+
+///////////////////////////////////////////////////////////	
+///////////////////////////////////////////////////////////
+
+9) Asistente en Comercio Exterior:
+	- Inglés
+	- Contabilidad
+	- Gestión contable y auditoría empresarial
+	- Profesional en turismo y hotelería
+10) Inglés:
+	- Asistente en Comercio Exterior
+	- Contabilidad
+	- Gestión contable y auditoría empresarial
+	- Profesional en turismo y hotelería
+11) Contabilidad:
+	- Asistente en Comercio exterior
+	- Gestión contable y auditoría empresarial
+	- Inglés
+	- Profesional en turismo y hotelería
+12) Gestión contable y Auditoría empresarial:
+	- Inglés
+	- Asistente en Comercio Exterior
+	- Contabilidad
+	- Profesional en turismo y hotelería
+13) Profesional en turismo y hotelería:
+	- Inglés
+	- Asistente en Comercio exterior
+	- Gestión Contable y Auditoría Empresarial
+	- Contabilidad
+
+///////////////////////////////////////////////////////////	
+///////////////////////////////////////////////////////////
+
+14) Analista en Marketing:
+	- Atención al cliente
+	- Asistente Financiero
+	- Gestión de ventas
+	- Productor de Seguros
+15) Atención al cliente:
+	- Gestión de ventas
+	- Analista en Marketing
+	- Asistente Financiero
+	- Productor de Seguros
+16) Asistente Financiero:
+	- Analista en Marketing
+	- Atención al Cliente
+	- Gestión de Ventas
+	- Productor de Seguros
+17) Gestión de ventas:
+	- Asistente de Marketing
+	- Atención al cliente
+	- Asistente Financiero
+	- Productor de Seguros
+18) Productor de seguros:
+	- Analista en Marketing
+	- Asistente Financiero
+	- Gestión de ventas
+	- Atención al cliente
+
+///////////////////////////////////////////////////////////	
+///////////////////////////////////////////////////////////
+
+19) Mecánica de vehículos:
+	- Refrigeración
+	- Técnico Electricista
+	- Reparación en Electrónica
+20) Refrigeración:
+	- Mecánica de vehículos
+	- Reparación en Electrónica
+	- Técnico Electricista
+21) Técnico electricista:
+	- Mecánica de vehículos
+	- Reparación de la electrónica
+	- Refrigeración
+22) Reparación de la electrónica
+	- Técnico electricista
+	- Mecánica de vehículos
+	- Refrigeración
+
+///////////////////////////////////////////////////////////	
+///////////////////////////////////////////////////////////
+
+23) Educación especial:
+	- Recreación y tiempo libre
+24) Recreación y Tiempo libre
+	- Educación especial
+
+///////////////////////////////////////////////////////////	
+///////////////////////////////////////////////////////////
+
+
+25) Conservas:
+	- Cocina
+	- Repostería
+26) Cocina:
+	- Repostería
+	- Conservas
+27) Repostería:
+	- Cocina
+	- Conservas
+
+///////////////////////////////////////////////////////////	
+///////////////////////////////////////////////////////////
+
+28) Reparación en joyería:
+	- Diseño de indumentaria
+	- Decoración artesanal
+29) Diseño de indumentaria:
+	- Reparación en Joyería
+	- Decoración artesanal
+30) Decoración artesanal:
+	- Diseño de indumentaria
+	- Reparación en Joyería
+
+///////////////////////////////////////////////////////////	
+///////////////////////////////////////////////////////////
+
+31) Carpintería en Aluminio:
+	- Técnico soldador
+	- Carpintería
+32) Técnico soldador:
+	- Carpintería
+	- Carpintería en Aluminio
+33) Carpintería:
+	- Carpintería en Aluminio
+	- Técnico Soldador
+
+///////////////////////////////////////////////////////////	
+///////////////////////////////////////////////////////////
+
+34) Fotografía: 
+	- Diseñador gráfico
+	- Creación de páginas web
+35) Diseñador gráfico:
+	- Fotografía
+	- Creación de Páginas web
+36) Creación de Páginas Web:
+	- Fotografía
+	- Diseñador gráfico
+
+///////////////////////////////////////////////////////////	
+///////////////////////////////////////////////////////////
+
+37) Albañilería:
+	- Instalaciones Sanitarias y Gas
+38) Instalaciones Sanitarias y Gas:
+	- Albañilería
+
+///////////////////////////////////////////////////////////	
+///////////////////////////////////////////////////////////
+
+39) Peluquería:
+	- Maquillaje
+	- Profesional en estética
+	- Masajes y Spa
+40) Maquillaje:
+	- Peluquería
+	- Profesional en estética
+	- Masajes y Spa
+41) Masajes y Spa:
+	- Profesional en estética
+	- Peluquería
+	- Maquillaje
+42) Profesional en estética:
+	- Peluquería
+	- Maquillaje
+	- Masajes y Spa

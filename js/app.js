@@ -1,5 +1,31 @@
 (function(){
-	var app = angular.module('myApp', []);
+	var app = angular.module('myApp', ['ngRoute']);
+
+
+	app.config(function($routeProvider) {
+
+	    $routeProvider
+	        .when('/', {
+	            templateUrl : 'partials/home.html',
+	            controller  : 'formularioCtrl'
+	        })
+	        .when('/inlae', {
+	            templateUrl : 'partials/institucion.html',
+	            controller  : 'formularioCtrl'
+	        })
+	        .when('/cursos', {
+	            templateUrl : 'partials/cursos.html',
+	            controller  : 'todosCursos'
+	        })
+	        .when('/preguntas', {
+	            templateUrl : 'partials/preguntas.html',
+	            controller  : 'todosCursos'
+	        })
+	        .otherwise({
+	            redirectTo: '/'
+	        });
+	});
+
 
 	app.controller('formularioCtrl', function($scope) {
 	    $scope.formData = {};
