@@ -30,51 +30,9 @@
           <span class="showMe" ng-show="formularioTop.$dirty && formularioTop.telefono.$error.minlength">Colocá un teléfono válido</span>
         </div>
         <p>seleccione su curso de Interés</p>
-        <div class="input">
-          <select id="select" ng-model="formData.select" name="select" required>
-            <option value="" disabled selected>Seleccionar</option>
-            <option value="2">Apicultura</option>
-            <option value="3">Analista en Recursos Humanos</option>
-            <option value="4">Analista en Gestión Rural</option>
-            <option value="5">Asistente en Comercio Exterior</option>
-            <option value="6">Asistente de Marketing</option>
-            <option value="7">Asistente Financiero</option>
-            <option value="8">Atención al cliente</option>
-            <option value="9">Mecánica de vehículos</option>
-            <option value="10">Educación especial</option>
-            <option value="11">Conservas</option>
-            <option value="12">Gestión contable y auditoría empresarial</option>
-            <option value="13">Gestión de ventas</option>
-            <option value="14">Recreación y Tiempo libre </option>
-            <option value="15">Especialista en Aluminio</option>
-            <option value="16">Carpintería </option>
-            <option value="17">Fotografía</option>
-            <option value="18">Contabilidad</option>
-            <option value="19">Refrigeración</option>
-            <option value="20">Albañilería</option>
-            <option value="21">Instalaciones Sanitarias y Gas</option>
-            <option value="22">Peluquería</option>
-            <option value="23">Secretariado Ejecutivo</option>
-            <option value="24">Repostería</option>
-            <option value="25">Maquillaje</option>
-            <option value="26">Técnico Soldador</option>
-            <option value="27">Técnico Electricista</option>
-            <option value="28">Cocina</option>
-            <option value="29">Jardinería</option>
-            <option value="30">Asistente Contable</option>
-            <option value="31">Inglés</option>
-            <option value="32">Administración de Empresas</option>
-            <option value="33">Control de Plagas en Jardinería</option>
-            <option value="34">Creación de Páginas web</option>
-            <option value="35">Decoración artesanal</option>
-            <option value="36">Diseñador gráfico</option>
-            <option value="37">Diseño de indumentaria</option>
-            <option value="38">Masajes y Spa</option>
-            <option value="39">Productor de Seguros</option>
-            <option value="40">Profesional en estética</option>
-            <option value="41">Profesional en turismo y hotelería</option>
-            <option value="42">Reparación de la electrónica</option>
-            <option value="43">Reparación en Joyería </option>
+        <div class="input" ng-controller='todosCursos'>
+          <select data-ng-model=" formData.select" data-ng-options="item.name for item in inlae | orderBy:'name':false" required>
+            <option value="" disabled selected> seleccionar </option>
           </select>
         </div>
         <div class="input">      
@@ -160,51 +118,9 @@
           <span class="showMe" ng-show="formularioTop.$dirty && formularioTop.telefono.$error.minlength">Colocá un teléfono válido</span>
         </div>
         <p>seleccione su curso de Interés</p>
-        <div class="input aparecer-arriba">
-          <select id="select" ng-model="formData.select" name="select" required>
-            <option value="" disabled selected>Seleccionar</option>
-            <option value="2">Apicultura</option>
-            <option value="3">Analista en Recursos Humanos</option>
-            <option value="4">Analista en Gestión Rural</option>
-            <option value="5">Asistente en Comercio Exterior</option>
-            <option value="6">Asistente de Marketing</option>
-            <option value="7">Asistente Financiero</option>
-            <option value="8">Atención al cliente</option>
-            <option value="9">Mecánica de vehículos</option>
-            <option value="10">Educación especial</option>
-            <option value="11">Conservas</option>
-            <option value="12">Gestión contable y auditoría empresarial</option>
-            <option value="13">Gestión de ventas</option>
-            <option value="14">Recreación y Tiempo libre </option>
-            <option value="15">Especialista en Aluminio</option>
-            <option value="16">Carpintería </option>
-            <option value="17">Fotografía</option>
-            <option value="18">Contabilidad</option>
-            <option value="19">Refrigeración</option>
-            <option value="20">Albañilería</option>
-            <option value="21">Instalaciones Sanitarias y Gas</option>
-            <option value="22">Peluquería</option>
-            <option value="23">Secretariado Ejecutivo</option>
-            <option value="24">Repostería</option>
-            <option value="25">Maquillaje</option>
-            <option value="26">Técnico Soldador</option>
-            <option value="27">Técnico Electricista</option>
-            <option value="28">Cocina</option>
-            <option value="29">Jardinería</option>
-            <option value="30">Asistente Contable</option>
-            <option value="31">Inglés</option>
-            <option value="32">Administración de Empresas</option>
-            <option value="33">Control de Plagas en Jardinería</option>
-            <option value="34">Creación de Páginas web</option>
-            <option value="35">Decoración artesanal</option>
-            <option value="36">Diseñador gráfico</option>
-            <option value="37">Diseño de indumentaria</option>
-            <option value="38">Masajes y Spa</option>
-            <option value="39">Productor de Seguros</option>
-            <option value="40">Profesional en estética</option>
-            <option value="41">Profesional en turismo y hotelería</option>
-            <option value="42">Reparación de la electrónica</option>
-            <option value="43">Reparación en Joyería </option>
+        <div class="input aparecer-arriba" ng-controller='todosCursos'>
+          <select data-ng-model=" formData.select" data-ng-options="item.name for item in inlae | orderBy:'name':false" required>
+            <option value="" disabled selected> seleccionar </option>
           </select>
         </div>
         <div class="input aparecer-abajo">      

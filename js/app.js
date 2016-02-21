@@ -1,5 +1,5 @@
 (function(){
-	var app = angular.module('myApp', ['ngRoute','cursosCtrles']);
+	var app = angular.module('myApp', ['ngRoute']);
 
 
 	app.config(function($routeProvider) {
@@ -52,12 +52,14 @@
 		
 	});
 
-	var cursosCtrles = angular.module('cursosListas', [] );
+	/*var cursosCtrles = angular.module('cursosListas', [] );
 
-	cursosCtrles.controller('cursosCtrl', ['$scope', '$routeParams',
-	  function($scope, $routeParams) {
-	    $scope.cursoId = $routeParams.cursoId;
-	  }]);
+	cursosCtrles.controller('cursosCtrl', ['$scope', '$routeParams', '$http',
+	  function($scope, $routeParams, $http) {
+	    $http.get('js/cursos.json/' + $routeParams.cursoId + '.json').success(function(data) {
+	      $scope.cursoId = data;
+	    });
+  	}]);*/
 	
 })();
 	

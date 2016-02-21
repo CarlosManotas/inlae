@@ -4,6 +4,7 @@
 		"images": "img/analista-rrhh.jpg",
 		"link": "analista-rrhh.html",
 		"relacion": "2",
+		"id" : "1",
 		"tipo": "administrativo"
 	},
 	{
@@ -11,6 +12,7 @@
 		"images": "img/asist-mkt.jpg",
 		"link": "asist-mkt.html",
 		"relacion": "4",
+		"id" : "2",
 		"tipo": "administrativo"
 	},
 	{
@@ -18,6 +20,7 @@
 		"images": "img/gest-ventas.jpg",
 		"link": "gest-ventas.html",
 		"relacion": "4",
+		"id" : "3",
 		"tipo": "administrativo"
 	},
 	{
@@ -25,6 +28,7 @@
 		"images": "img/contabilidad.jpg",
 		"link": "contabilidad.html",
 		"relacion": "3",
+		"id" : "4",
 		"tipo": "administrativo"
 	},
 	{
@@ -32,6 +36,7 @@
 		"images": "img/sec-ejecutivo.jpg",
 		"link": "sec-ejecutivo.html",
 		"relacion": "2",
+		"id" : "5",
 		"tipo": "administrativo"
 	},
 	{
@@ -39,6 +44,7 @@
 		"images": "img/asist-contable.jpg",
 		"link": "asist-contable.html",
 		"relacion": "2",
+		"id" : "6",
 		"tipo": "administrativo"
 	},
 	{
@@ -46,6 +52,7 @@
 		"images": "img/adm-empresas.jpg",
 		"link": "adm-empresas.html",
 		"relacion": "2",
+		"id" : "7",
 		"tipo": "administrativo"
 	},
 	{
@@ -53,6 +60,7 @@
 		"images": "img/asist-financiero.jpg",
 		"link": "asist-financiero.html",
 		"relacion": "4",
+		"id" : "8",
 		"tipo": "administrativo"
 	},
 	{
@@ -60,6 +68,7 @@
 		"images": "img/gest-rural.jpg",
 		"link": "gest-rural.html",
 		"relacion": "1",
+		"id" : "9",
 		"tipo": "administrativo"
 	},
 	{
@@ -67,6 +76,7 @@
 		"images": "img/asist-com-exterior.jpg",
 		"link": "asist-com-exterior.html",
 		"relacion": "3",
+		"id" : "10",
 		"tipo": "administrativo"
 	},
 	{
@@ -74,6 +84,7 @@
 		"images": "img/at-cliente.jpg",
 		"link": "at-cliente.html",
 		"relacion": "4",
+		"id" : "11",
 		"tipo": "administrativo"
 	},
 	{
@@ -81,6 +92,7 @@
 		"images": "img/gestion-cont-empre.jpg",
 		"link": "gestion-cont-empre.html",
 		"relacion": "3",
+		"id" : "12",
 		"tipo": "administrativo"
 	},
 	{
@@ -88,6 +100,7 @@
 		"images": "img/fotografia.jpg",
 		"link": "fotografia.html",
 		"relacion": "10",
+		"id" : "13",
 		"tipo": "oficio"
 	},
 	{
@@ -95,6 +108,7 @@
 		"images": "img/refrigeracion.jpg",
 		"link": "refrigeracion.html",
 		"relacion": "5",
+		"id" : "14",
 		"tipo": "oficio"
 	},
 	{
@@ -102,6 +116,7 @@
 		"images": "img/peluqueria.jpg",
 		"link": "peluqueria.html",
 		"relacion": "12",
+		"id" : "15",
 		"tipo": "oficio"
 	},
 	{
@@ -109,6 +124,7 @@
 		"images": "img/reposteria.jpg",
 		"link": "reposteria.html",
 		"relacion": "7",
+		"id" : "16",
 		"tipo": "oficio"
 	},
 	{
@@ -116,6 +132,7 @@
 		"images": "img/electricista.jpg",
 		"link": "electricista.html",
 		"relacion": "5",
+		"id" : "17",
 		"tipo": "oficio"
 	},
 	{
@@ -123,6 +140,7 @@
 		"images": "img/maquillaje.jpg",
 		"link": "maquillaje.html",
 		"relacion": "12",
+		"id" : "18",
 		"tipo": "oficio"
 	},
 	{
@@ -130,6 +148,7 @@
 		"images": "img/cocina.jpg",
 		"link": "cocina.html",
 		"relacion": "7",
+		"id" : "19",
 		"tipo": "oficio"
 	},
 	{
@@ -137,6 +156,7 @@
 		"images": "img/jardineria.jpg",
 		"link": "jardineria.html",
 		"relacion": "1",
+		"id" : "20",
 		"tipo": "oficio"
 	},
 	{
@@ -144,6 +164,7 @@
 		"images": "img/apicultura.jpg",
 		"link": "apicultura.html",
 		"relacion": "1",
+		"id" : "21",
 		"tipo": "oficio"
 	},
 	{
@@ -151,6 +172,7 @@
 		"images": "img/mec-auto.jpg",
 		"link": "mec-auto.html",
 		"relacion": "5",
+		"id" : "22",
 		"tipo": "oficio"
 	},
 	{
@@ -158,6 +180,7 @@
 		"images": "img/ed-especial.jpg",
 		"link": "ed-especial.html",
 		"relacion": "6",
+		"id" : "23",
 		"tipo": "oficio"
 	},
 	{
@@ -165,6 +188,7 @@
 		"images": "img/conservas.jpg",
 		"link": "conservas.html",
 		"relacion": "7",
+		"id" : "24",
 		"tipo": "oficio"
 	},
 	{
@@ -172,6 +196,7 @@
 		"images": "img/recreacion-tiempolibre.jpg",
 		"link": "recreacion-tiempolibre.html",
 		"relacion": "6",
+		"id" : "25",
 		"tipo": "oficio"
 	},
 	{
@@ -179,6 +204,7 @@
 		"images": "img/rep-joyeria.jpg",
 		"link": "rep-joyeria.html",
 		"relacion": "8",
+		"id" : "26",
 		"tipo": "oficio"
 	},
 	{
@@ -186,6 +212,7 @@
 		"images": "img/aluminio.jpg",
 		"link": "aluminio.html",
 		"relacion": "9",
+		"id" : "27",
 		"tipo": "oficio"
 	},
 	{
@@ -193,6 +220,7 @@
 		"images": "img/carpinteria.jpg",
 		"link": "carpinteria.html",
 		"relacion": "9",
+		"id" : "28",
 		"tipo": "oficio"
 	},
 	{
@@ -200,6 +228,7 @@
 		"images": "img/albanil.jpg",
 		"link": "albanil.html",
 		"relacion": "11",
+		"id" : "29",
 		"tipo": "oficio"
 	},
 	{
@@ -207,6 +236,7 @@
 		"images": "img/sanitarias-gas.jpg",
 		"link": "sanitarias-gas.html",
 		"relacion": "11",
+		"id" : "30",
 		"tipo": "oficio"
 	},
 	{
@@ -214,6 +244,7 @@
 		"images": "img/tec-soldador.jpg",
 		"link": "tec-soldador.html",
 		"relacion": "9",
+		"id" : "31",
 		"tipo": "oficio"
 	},
 	{
@@ -221,6 +252,7 @@
 		"images": "img/ingles.jpg",
 		"link": "ingles.html",
 		"relacion": "3",
+		"id" : "32",
 		"tipo": "oficio"
 	},
 	{
@@ -228,6 +260,7 @@
 		"images": "img/ctrol-plagas.jpg",
 		"link": "ctrol-plagas.html",
 		"relacion": "1",
+		"id" : "33",
 		"tipo": "oficio"
 	},
 	{
@@ -235,6 +268,7 @@
 		"images": "img/d-web.jpg",
 		"link": "d-web.html",
 		"relacion": "10",
+		"id" : "34",
 		"tipo": "oficio"
 	},
 	{
@@ -242,6 +276,7 @@
 		"images": "img/decor-artesanal.jpg",
 		"link": "decor-artesanal.html",
 		"relacion": "8",
+		"id" : "35",
 		"tipo": "oficio"
 	},
 	{
@@ -249,6 +284,7 @@
 		"images": "img/d-grafico.jpg",
 		"link": "d-grafico.html",
 		"relacion": "10",
+		"id" : "36",
 		"tipo": "oficio"
 	},
 	{
@@ -256,6 +292,7 @@
 		"images": "img/d-indumentaria.jpg",
 		"link": "d-indumentaria.html",
 		"relacion": "8",
+		"id" : "37",
 		"tipo": "oficio"
 	},
 	{
@@ -263,6 +300,7 @@
 		"images": "img/masajes-spa.jpg",
 		"link": "masajes-spa.html",
 		"relacion": "12",
+		"id" : "38",
 		"tipo": "oficio"
 	},
 	{
@@ -270,6 +308,7 @@
 		"images": "img/prod-seguros.jpg",
 		"link": "prod-seguros.html",
 		"relacion": "4",
+		"id" : "39",
 		"tipo": "oficio"
 	},
 	{
@@ -277,6 +316,7 @@
 		"images": "img/estetica.jpg",
 		"link": "estetica.html",
 		"relacion": "12",
+		"id" : "40",
 		"tipo": "oficio"
 	},
 	{
@@ -284,6 +324,7 @@
 		"images": "img/hotel-turismo.jpg",
 		"link": "hotel-turismo.html",
 		"relacion": "3",
+		"id" : "41",
 		"tipo": "oficio"
 	},
 	{
@@ -291,6 +332,7 @@
 		"images": "img/rep-electronica.jpg",
 		"link": "rep-electronica.html",
 		"relacion": "5",
+		"id" : "42",
 		"tipo": "oficio"
 	}
 ]
