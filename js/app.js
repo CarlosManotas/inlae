@@ -25,13 +25,13 @@
 	            templateUrl : 'partials/preguntas.html',
 	            controller  : 'todosCursos'
 	        })
-	        .when('cursos/:cursoTitle/:cursoImg/:cursoId', {
+	        .when('cursos/:cursoTitle/:cursoImg/:cursoId/:cursoObjetivo', {
 	            templateUrl : 'partials/detalle.html',
-	            controller  : 'cursosCtrl'
+	            controller  : 'todosCursos'
 	        })
-	        .when('/:cursoTitle/:cursoImg/:cursoId', {
+	        .when('/:cursoTitle/:cursoImg/:cursoId/:cursoObjetivo', {
 	            templateUrl : 'partials/detalle.html',
-	            controller  : 'cursosCtrl'
+	            controller  : 'todosCursos'
 	        })
 	        .otherwise({
 	            redirectTo: '/'
@@ -53,28 +53,28 @@
 		  };
 	});
 
-	app.controller('todosCursos',['$scope', '$http', function($scope , $http){
+	app.controller('todosCursos',['$scope', '$http','$routeParams', function($scope , $http, $routeParams){
 		$http.get('js/cursos.json').success(function(data){
 			$scope.inlae = data;
 		});
+		$scope.cursoImg = $routeParams.cursoImg;
+	  	$scope.cursoTitle = $routeParams.cursoTitle;
+	  	$scope.cursoId = $routeParams.cursoId;
+	  	$scope.cursoObjetivo = $routeParams.cursoObjetivo;
+
 	}]);
 	
-
+	app.filter('escape', function() {
+	  return window.encodeURIComponent;
+	});
+	app.filter('atrapado',function(){
+		return window.decodeURIComponent;
+	});
 	/*app.controller('cursosCtrl', ['$scope', '$routeParams',
 	  function($scope, $routeParams) {
 	    $scope.cursoId = $routeParams.cursoId;
   	}]);*/
 	
-	app.controller('cursosCtrl', ['$scope', '$routeParams', '$http',
-	  function($scope, $routeParams, $http) {
-
-	  	$scope.cursoImg = $routeParams.cursoImg;
-	  	$scope.cursoTitle = $routeParams.cursoTitle;
-	  	$scope.cursoId = $routeParams.cursoId;
-	    $http.get('cursos/' + $routeParams.cursoId + '.json' || '/' + $routeParams.cursoId + '.json' || 'home/' + $routeParams.cursoId + '.json').success(function(data) {
-	      $scope.curso = data;
-	    });
-	  }]);
 })();
 	
 

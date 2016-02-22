@@ -2861,6 +2861,13 @@ figure {
       #seccion1 figure.figure-home.inlae {
         background-image: url(../img/institucion.jpg); } }
 
+#seccion1 figure.figure-detalle {
+  height: 400px;
+  width: 100%;
+  overflow: hidden; }
+  #seccion1 figure.figure-detalle img {
+    width: 100%; }
+
 #seccion1 .Titulo-curso {
   text-transform: uppercase; }
   #seccion1 .Titulo-curso h2 {

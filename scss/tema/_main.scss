@@ -24,6 +24,14 @@
 			}
 		}
 	}
+	figure.figure-detalle{
+		height: 400px;
+		width: 100%;
+		overflow:hidden;
+		img{
+			width: 100%;
+		}
+	}
 	.Titulo-curso{
 		text-transform: uppercase;
 		h2{

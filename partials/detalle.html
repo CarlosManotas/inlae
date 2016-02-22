@@ -52,37 +52,7 @@
     <section id="seccion4">
       <div class="ed-container">
       	<div class="ed-item web-65">
-      		<h2>Objetivos del curso</h2>
-      		<p>Brindar al participante las técnicas e interpretaciones necesarias para ser un experto en obras de albañilería, e incorporarse en el mercado laboral de la edificación de manera rápida y efectiva.</p>
-      		<h2>Programa de estudio</h2>
-      		<h3>Módulo I: Fábricas de Albañilería</h3>
-      		<li>Morteros y pastas en albañilería y revestimientos</li>
-      		<li>Hormigones</li>
-      		<li>Elaboración de morteros y materiales de rejuntado</li>
-      		<li>Proceso y preparación de equipos y medios en trabajos de albañilería (en obras de fábricas vista y para revestir)</li>
-      		<li>Ejecución de fábricas a cara vista</li>
-      		<li>Ejecución de fábricas para revestir</li>
-      		<li>Ejecución de muros de mampostería</li>
-      		<li>Estudio de documentos de referencia</li>
-      		<li>Organización de obras de fábrica</li>
-      		<li>Seguridad en fábricas de albañilería</li>
-      		<br>
-      		<h3>Módulo II: Operaciones auxiliares de acabados rígidos y urbanización</h3>
-      		<li>Labores auxiliares de obra</li>
-      		<li>Acondicionamiento de tajos</li>
-      		<li>Abastecimiento de tajos y acopios</li>
-      		<li>Operaciones de excavación</li>
-      		<li>Seguridad básica en obras de construcción</li>
-      		<li>Adhesivos y materiales de rejuntado</li>
-      		<li>Elaboración de morteros, pastas y hormigones</li>
-      		<li>Proceso y preparación de equipos y medios en trabajos de albañilería</li>
-      		<li>Preparación de soportes para revestir</li>
-      		<br>
-      		<h3>Módulo III: Tratamientos auxiliares</h3>
-      		<li>Trabajos de preparación de piezas</li>
-      		<li>Ejecución de trabajos auxiliares</li>
-      		<li>Ejecución de bordes de confinamiento y adoquinados</li>
-      		<li>Ejecución de pavimentos de hormigón impreso</li>
+      		{{cursoObjetivo | atrapado}}
       	</div>
       	<div class="ed-item web-30 no-padding desde-web web-offset-5">
       		<div class="llamanos">
@@ -92,18 +62,18 @@
       		</div>
       		<h2>Cursos Relacionados</h2>
       		<div class="cursos-relacionados" ng-controller="todosCursos">
-      			<div class="ed-item aparecer-arriba" ng-repeat="oficio in oficios  | orderBy:'name':true | limitTo: 3">
-		          <a ng-href="{{oficio.link}}">
-		            <figure>
-		              <img ng-src="{{oficio.images}}">
-		            </figure>
-		            <p class="aparecer-izquierda">
-		              <span class="icono-logo"></span> 
-		              {{oficio.name}} 
-		            </p>
-		          </a>
-		        </div>
-      		</div>
+            <div class="ed-item aparecer-arriba" ng-repeat="oficio in inlae  | orderBy:'name':true | filter:{relacion:'10'}">
+              <a ng-href="#/{{oficio.name}}/{{oficio.imagesUrl}}/{{oficio.id}}">
+                <figure>
+                  <img ng-src="img/{{oficio.imagesUrl}}">
+                </figure>
+                <p class="aparecer-izquierda">
+                  <span class="icono-logo"></span> 
+                  {{oficio.name}} 
+                </p>
+              </a>
+            </div>
+          </div>
       	</div>
       </div>
     </section>
@@ -130,50 +100,9 @@
               <span class="showMe" ng-show="formularioTop.$dirty && formularioTop.telefono.$error.minlength">Colocá un teléfono válido</span>
             </div>
             <p>seleccione su curso de Interés</p>
-            <div class="input aparecer-arriba">
-              <select id="select" ng-model="formData.select" name="select">
-                <option value="" selected="selected">Fotografía</option>
-                <option value="2">Apicultura</option>
-                <option value="3">Analista en Recursos Humanos</option>
-                <option value="4">Analista en Gestión Rural</option>
-                <option value="5">Asistente en Comercio Exterior</option>
-                <option value="6">Asistente de Marketing</option>
-                <option value="7">Asistente Financiero</option>
-                <option value="8">Atención al cliente</option>
-                <option value="9">Mecánica de vehículos</option>
-                <option value="10">Educación especial</option>
-                <option value="11">Conservas</option>
-                <option value="12">Gestión contable y auditoría empresarial</option>
-                <option value="13">Gestión de ventas</option>
-                <option value="14">Recreación y Tiempo libre </option>
-                <option value="15">Especialista en Aluminio</option>
-                <option value="16">Carpintería </option>
-                <option value="18">Contabilidad</option>
-                <option value="19">Refrigeración</option>
-                <option value="20">Albañilería</option>
-                <option value="21">Instalaciones Sanitarias y Gas</option>
-                <option value="22">Peluquería</option>
-                <option value="23">Secretariado Ejecutivo</option>
-                <option value="24">Repostería</option>
-                <option value="25">Maquillaje</option>
-                <option value="26">Técnico Soldador</option>
-                <option value="27">Técnico Electricista</option>
-                <option value="28">Cocina</option>
-                <option value="29">Jardinería</option>
-                <option value="30">Asistente Contable</option>
-                <option value="31">Inglés</option>
-                <option value="32">Administración de Empresas</option>
-                <option value="33">Control de Plagas en Jardinería</option>
-                <option value="34">Creación de Páginas web</option>
-                <option value="35">Decoración artesanal</option>
-                <option value="36">Diseñador gráfico</option>
-                <option value="37">Diseño de indumentaria</option>
-                <option value="38">Masajes y Spa</option>
-                <option value="39">Productor de Seguros</option>
-                <option value="40">Profesional en estética</option>
-                <option value="41">Profesional en turismo y hotelería</option>
-                <option value="42">Reparación de la electrónica</option>
-                <option value="43">Reparación en Joyería </option>
+            <div class="input aparecer-arriba" ng-controller='todosCursos'>
+              <select ng-model=" formData.select" ng-options="item.name for item in inlae | filter:{{cursoId}} ">
+                <option value="" ng-if="false" ></option>
               </select>
             </div>
             <div class="input aparecer-abajo">      
