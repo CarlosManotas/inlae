@@ -25,11 +25,11 @@
 	            templateUrl : 'partials/preguntas.html',
 	            controller  : 'todosCursos'
 	        })
-	        .when('cursos/:cursoId', {
+	        .when('cursos/:cursoTitle/:cursoImg/:cursoId', {
 	            templateUrl : 'partials/detalle.html',
 	            controller  : 'cursosCtrl'
 	        })
-	        .when('/:cursoId', {
+	        .when('/:cursoTitle/:cursoImg/:cursoId', {
 	            templateUrl : 'partials/detalle.html',
 	            controller  : 'cursosCtrl'
 	        })
@@ -67,6 +67,9 @@
 	
 	app.controller('cursosCtrl', ['$scope', '$routeParams', '$http',
 	  function($scope, $routeParams, $http) {
+
+	  	$scope.cursoImg = $routeParams.cursoImg;
+	  	$scope.cursoTitle = $routeParams.cursoTitle;
 	  	$scope.cursoId = $routeParams.cursoId;
 	    $http.get('cursos/' + $routeParams.cursoId + '.json' || '/' + $routeParams.cursoId + '.json' || 'home/' + $routeParams.cursoId + '.json').success(function(data) {
 	      $scope.curso = data;

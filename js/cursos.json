@@ -1,7 +1,7 @@
 [
 	{
 		"name": "Analista en Recursos Humanos",
-		"images": "img/analista-rrhh.jpg",
+		"imagesUrl": "analista-rrhh.jpg",
 		"link": "analista-rrhh.html",
 		"relacion": "2",
 		"id" : "a1",
@@ -9,7 +9,7 @@
 	},
 	{
 		"name": "Asistente de Marketing",
-		"images": "img/asist-mkt.jpg",
+		"imagesUrl": "asist-mkt.jpg",
 		"link": "asist-mkt.html",
 		"relacion": "4",
 		"id" : "a2",
@@ -17,7 +17,7 @@
 	},
 	{
 		"name": "Gestión de ventas",
-		"images": "img/gest-ventas.jpg",
+		"imagesUrl": "gest-ventas.jpg",
 		"link": "gest-ventas.html",
 		"relacion": "4",
 		"id" : "a3",
@@ -25,7 +25,7 @@
 	},
 	{
 		"name": "Contabilidad",
-		"images": "img/contabilidad.jpg",
+		"imagesUrl": "contabilidad.jpg",
 		"link": "contabilidad.html",
 		"relacion": "3",
 		"id" : "a4",
@@ -33,47 +33,47 @@
 	},
 	{
 		"name": "Secretariado Ejecutivo",
-		"images": "img/sec-ejecutivo.jpg",
+		"imagesUrl": "sec-ejecutivo.jpg",
 		"link": "sec-ejecutivo.html",
 		"relacion": "2",
-		"id" : "5",
+		"id" : "a5",
 		"tipo": "administrativo"
 	},
 	{
 		"name": "Asistente Contable",
-		"images": "img/asist-contable.jpg",
+		"imagesUrl": "asist-contable.jpg",
 		"link": "asist-contable.html",
 		"relacion": "2",
-		"id" : "6",
+		"id" : "a6",
 		"tipo": "administrativo"
 	},
 	{
 		"name": "Administración de Empresas",
-		"images": "img/adm-empresas.jpg",
+		"imagesUrl": "adm-empresas.jpg",
 		"link": "adm-empresas.html",
 		"relacion": "2",
-		"id" : "7",
+		"id" : "a7",
 		"tipo": "administrativo"
 	},
 	{
 		"name": "Asistente Financiero",
-		"images": "img/asist-financiero.jpg",
+		"imagesUrl": "asist-financiero.jpg",
 		"link": "asist-financiero.html",
 		"relacion": "4",
-		"id" : "8",
+		"id" : "a8",
 		"tipo": "administrativo"
 	},
 	{
 		"name": "Analista en Gestión Rural",
-		"images": "img/gest-rural.jpg",
+		"imagesUrl": "gest-rural.jpg",
 		"link": "gest-rural.html",
 		"relacion": "1",
-		"id" : "9",
+		"id" : "a9",
 		"tipo": "administrativo"
 	},
 	{
 		"name": "Asistente en Comercio Exterior",
-		"images": "img/asist-com-exterior.jpg",
+		"imagesUrl": "asist-com-exterior.jpg",
 		"link": "asist-com-exterior.html",
 		"relacion": "3",
 		"id" : "10",
@@ -81,7 +81,7 @@
 	},
 	{
 		"name": "Atención al Cliente",
-		"images": "img/at-cliente.jpg",
+		"imagesUrl": "at-cliente.jpg",
 		"link": "at-cliente.html",
 		"relacion": "4",
 		"id" : "11",
@@ -89,7 +89,7 @@
 	},
 	{
 		"name": "Gestión Contable y Auditoría Empresarial",
-		"images": "img/gestion-cont-empre.jpg",
+		"imagesUrl": "gestion-cont-empre.jpg",
 		"link": "gestion-cont-empre.html",
 		"relacion": "3",
 		"id" : "12",
@@ -97,7 +97,7 @@
 	},
 	{
 		"name": "Fotografía",
-		"images": "img/fotografia.jpg",
+		"imagesUrl": "fotografia.jpg",
 		"link": "fotografia.html",
 		"relacion": "10",
 		"id" : "13",
@@ -105,7 +105,7 @@
 	},
 	{
 		"name": "Refrigeración",
-		"images": "img/refrigeracion.jpg",
+		"imagesUrl": "refrigeracion.jpg",
 		"link": "refrigeracion.html",
 		"relacion": "5",
 		"id" : "14",
@@ -113,7 +113,7 @@
 	},
 	{
 		"name": "Peluquería",
-		"images": "img/peluqueria.jpg",
+		"imagesUrl": "peluqueria.jpg",
 		"link": "peluqueria.html",
 		"relacion": "12",
 		"id" : "15",
@@ -121,7 +121,7 @@
 	},
 	{
 		"name": "Repostería",
-		"images": "img/reposteria.jpg",
+		"imagesUrl": "reposteria.jpg",
 		"link": "reposteria.html",
 		"relacion": "7",
 		"id" : "16",
@@ -129,7 +129,7 @@
 	},
 	{
 		"name": "Técnico Electricista",
-		"images": "img/electricista.jpg",
+		"imagesUrl": "electricista.jpg",
 		"link": "electricista.html",
 		"relacion": "5",
 		"id" : "17",
@@ -137,7 +137,7 @@
 	},
 	{
 		"name": "Maquillaje",
-		"images": "img/maquillaje.jpg",
+		"imagesUrl": "maquillaje.jpg",
 		"link": "maquillaje.html",
 		"relacion": "12",
 		"id" : "18",
@@ -145,7 +145,7 @@
 	},
 	{
 		"name": "Cocina",
-		"images": "img/cocina.jpg",
+		"imagesUrl": "cocina.jpg",
 		"link": "cocina.html",
 		"relacion": "7",
 		"id" : "19",
@@ -153,7 +153,7 @@
 	},
 	{
 		"name": "Jardinería",
-		"images": "img/jardineria.jpg",
+		"imagesUrl": "jardineria.jpg",
 		"link": "jardineria.html",
 		"relacion": "1",
 		"id" : "20",
@@ -161,7 +161,7 @@
 	},
 	{
 		"name": "Apicultura",
-		"images": "img/apicultura.jpg",
+		"imagesUrl": "apicultura.jpg",
 		"link": "apicultura.html",
 		"relacion": "1",
 		"id" : "21",
@@ -169,7 +169,7 @@
 	},
 	{
 		"name": "Mecánica de vehículos",
-		"images": "img/mec-auto.jpg",
+		"imagesUrl": "mec-auto.jpg",
 		"link": "mec-auto.html",
 		"relacion": "5",
 		"id" : "22",
@@ -177,7 +177,7 @@
 	},
 	{
 		"name": "Educación especial",
-		"images": "img/ed-especial.jpg",
+		"imagesUrl": "ed-especial.jpg",
 		"link": "ed-especial.html",
 		"relacion": "6",
 		"id" : "23",
@@ -185,7 +185,7 @@
 	},
 	{
 		"name": "Conservas",
-		"images": "img/conservas.jpg",
+		"imagesUrl": "conservas.jpg",
 		"link": "conservas.html",
 		"relacion": "7",
 		"id" : "24",
@@ -193,7 +193,7 @@
 	},
 	{
 		"name": "Recreación y Tiempo libre",
-		"images": "img/recreacion-tiempolibre.jpg",
+		"imagesUrl": "recreacion-tiempolibre.jpg",
 		"link": "recreacion-tiempolibre.html",
 		"relacion": "6",
 		"id" : "25",
@@ -201,7 +201,7 @@
 	},
 	{
 		"name": "Reparación en Joyería",
-		"images": "img/rep-joyeria.jpg",
+		"imagesUrl": "rep-joyeria.jpg",
 		"link": "rep-joyeria.html",
 		"relacion": "8",
 		"id" : "26",
@@ -209,7 +209,7 @@
 	},
 	{
 		"name": "Carpintería en Aluminio",
-		"images": "img/aluminio.jpg",
+		"imagesUrl": "aluminio.jpg",
 		"link": "aluminio.html",
 		"relacion": "9",
 		"id" : "27",
@@ -217,7 +217,7 @@
 	},
 	{
 		"name": "Carpintería",
-		"images": "img/carpinteria.jpg",
+		"imagesUrl": "carpinteria.jpg",
 		"link": "carpinteria.html",
 		"relacion": "9",
 		"id" : "28",
@@ -225,7 +225,7 @@
 	},
 	{
 		"name": "Albañilería",
-		"images": "img/albanil.jpg",
+		"imagesUrl": "albanil.jpg",
 		"link": "albanil.html",
 		"relacion": "11",
 		"id" : "29",
@@ -233,7 +233,7 @@
 	},
 	{
 		"name": "Instalaciones Sanitarias y Gas",
-		"images": "img/sanitarias-gas.jpg",
+		"imagesUrl": "sanitarias-gas.jpg",
 		"link": "sanitarias-gas.html",
 		"relacion": "11",
 		"id" : "30",
@@ -241,7 +241,7 @@
 	},
 	{
 		"name": "Técnico Soldador",
-		"images": "img/tec-soldador.jpg",
+		"imagesUrl": "tec-soldador.jpg",
 		"link": "tec-soldador.html",
 		"relacion": "9",
 		"id" : "31",
@@ -249,7 +249,7 @@
 	},
 	{
 		"name": "Inglés",
-		"images": "img/ingles.jpg",
+		"imagesUrl": "ingles.jpg",
 		"link": "ingles.html",
 		"relacion": "3",
 		"id" : "32",
@@ -257,7 +257,7 @@
 	},
 	{
 		"name": "Control de Plagas en Jardinería",
-		"images": "img/ctrol-plagas.jpg",
+		"imagesUrl": "ctrol-plagas.jpg",
 		"link": "ctrol-plagas.html",
 		"relacion": "1",
 		"id" : "33",
@@ -265,7 +265,7 @@
 	},
 	{
 		"name": "Creación de Páginas web",
-		"images": "img/d-web.jpg",
+		"imagesUrl": "d-web.jpg",
 		"link": "d-web.html",
 		"relacion": "10",
 		"id" : "34",
@@ -273,7 +273,7 @@
 	},
 	{
 		"name": "Decoración artesanal",
-		"images": "img/decor-artesanal.jpg",
+		"imagesUrl": "decor-artesanal.jpg",
 		"link": "decor-artesanal.html",
 		"relacion": "8",
 		"id" : "35",
@@ -281,7 +281,7 @@
 	},
 	{
 		"name": "Diseñador gráfico",
-		"images": "img/d-grafico.jpg",
+		"imagesUrl": "d-grafico.jpg",
 		"link": "d-grafico.html",
 		"relacion": "10",
 		"id" : "36",
@@ -289,7 +289,7 @@
 	},
 	{
 		"name": "Diseño de indumentaria",
-		"images": "img/d-indumentaria.jpg",
+		"imagesUrl": "d-indumentaria.jpg",
 		"link": "d-indumentaria.html",
 		"relacion": "8",
 		"id" : "37",
@@ -297,7 +297,7 @@
 	},
 	{
 		"name": "Masajes y Spa",
-		"images": "img/masajes-spa.jpg",
+		"imagesUrl": "masajes-spa.jpg",
 		"link": "masajes-spa.html",
 		"relacion": "12",
 		"id" : "38",
@@ -305,7 +305,7 @@
 	},
 	{
 		"name": "Productor de Seguros",
-		"images": "img/prod-seguros.jpg",
+		"imagesUrl": "prod-seguros.jpg",
 		"link": "prod-seguros.html",
 		"relacion": "4",
 		"id" : "39",
@@ -313,7 +313,7 @@
 	},
 	{
 		"name": "Profesional en estética",
-		"images": "img/estetica.jpg",
+		"imagesUrl": "estetica.jpg",
 		"link": "estetica.html",
 		"relacion": "12",
 		"id" : "40",
@@ -321,7 +321,7 @@
 	},
 	{
 		"name": "Profesional en turismo y hotelería",
-		"images": "img/hotel-turismo.jpg",
+		"imagesUrl": "hotel-turismo.jpg",
 		"link": "hotel-turismo.html",
 		"relacion": "3",
 		"id" : "41",
@@ -329,7 +329,7 @@
 	},
 	{
 		"name": "Reparación de la electrónica",
-		"images": "img/rep-electronica.jpg",
+		"imagesUrl": "rep-electronica.jpg",
 		"link": "rep-electronica.html",
 		"relacion": "5",
 		"id" : "42",

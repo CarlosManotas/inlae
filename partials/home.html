@@ -56,9 +56,9 @@
       <h2>OFICIOS Y PROFESIONES</h2>
     </div>
     <div class="ed-item tablet-25 movil-50 aparecer-arriba" ng-repeat="oficio in inlae | filter:{tipo:'oficio'} | orderBy:'name':false | limitTo: 8 ">
-      <a href="#/{{oficio.id}}">
+      <a href="#/{{oficio.name}}">
         <figure>
-          <img ng-src="{{oficio.images}}">
+          <img ng-src="img/{{oficio.imagesUrl}}">
         </figure>
         <p class="aparecer-izquierda">
           <span class="icono-logo"></span> 
@@ -78,9 +78,9 @@
       <h2>ADMINISTRATIVO Y EMPRESARIAL</h2>
     </div>
     <div class="ed-item tablet-25 movil-50 aparecer-arriba" ng-repeat="administrativo in inlae | filter:{tipo:'administrativo'} | orderBy:'name':false | limitTo: 8">
-      <a href="#/{{administrativo.id}}">
+      <a href="#/{{administrativo.name}}/{{administrativo.imagesUrl}}/{{administrativo.id}}">
         <figure>
-          <img ng-src="{{administrativo.images}}">
+          <img ng-src="img/{{administrativo.imagesUrl}}">
         </figure>
         <p class="aparecer-izquierda">
           <span class="icono-logo"></span> 

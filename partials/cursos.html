@@ -6,7 +6,7 @@
         <div class="ed-item tablet-25 movil-50 aparecer-arriba" ng-repeat="oficio in inlae | filter:{tipo:'oficio'} | orderBy:'name':false">
           <a href="#/cursos/{{oficio.id}}">
             <figure>
-              <img ng-src="{{oficio.images}}">
+              <img ng-src="{{oficio.imagesUrl}}">
             </figure>
             <p class="aparecer-izquierda">
               <span class="icono-logo"></span> 
@@ -28,7 +28,7 @@
         <div class="ed-item tablet-25 movil-50 aparecer-arriba" ng-repeat="administrativo in inlae | filter:{tipo:'administrativo'} | orderBy:'name':false">
           <a href="#/cursos/{{administrativo.id}}">
             <figure>
-              <img ng-src="{{administrativo.images}}">
+              <img ng-src="{{administrativo.imagesUrl}}">
             </figure>
             <p class="aparecer-izquierda">
               <span class="icono-logo"></span> 
