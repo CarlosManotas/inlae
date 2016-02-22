@@ -83,8 +83,8 @@
             </div>
             <p>seleccione su curso de Interés</p>
             <div class="input" ng-controller='todosCursos'>
-              <select data-ng-model=" formData.select" data-ng-options="item.name for item in inlae | filter:{id:'42'} | limitTo: 1">
-                <option value=""> {{label}} </option>
+              <select ng-model=" formData.select" ng-options="item.name for item in inlae | filter:{id:'13'}">
+                <option value="" ng-if="false" > </option>
               </select>
             </div>
             <div class="input">      

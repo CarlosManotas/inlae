@@ -4,7 +4,7 @@
 		"images": "img/analista-rrhh.jpg",
 		"link": "analista-rrhh.html",
 		"relacion": "2",
-		"id" : "1",
+		"id" : "a1",
 		"tipo": "administrativo"
 	},
 	{
@@ -12,7 +12,7 @@
 		"images": "img/asist-mkt.jpg",
 		"link": "asist-mkt.html",
 		"relacion": "4",
-		"id" : "2",
+		"id" : "a2",
 		"tipo": "administrativo"
 	},
 	{
@@ -20,7 +20,7 @@
 		"images": "img/gest-ventas.jpg",
 		"link": "gest-ventas.html",
 		"relacion": "4",
-		"id" : "3",
+		"id" : "a3",
 		"tipo": "administrativo"
 	},
 	{
@@ -28,7 +28,7 @@
 		"images": "img/contabilidad.jpg",
 		"link": "contabilidad.html",
 		"relacion": "3",
-		"id" : "4",
+		"id" : "a4",
 		"tipo": "administrativo"
 	},
 	{

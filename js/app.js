@@ -9,6 +9,10 @@
 	            templateUrl : 'partials/home.html',
 	            controller  : 'formularioCtrl'
 	        })
+	        .when('/home', {
+	            templateUrl : 'partials/home.html',
+	            controller  : 'formularioCtrl'
+	        })
 	        .when('/inlae', {
 	            templateUrl : 'partials/institucion.html',
 	            controller  : 'formularioCtrl'
@@ -21,8 +25,12 @@
 	            templateUrl : 'partials/preguntas.html',
 	            controller  : 'todosCursos'
 	        })
-	        .when('/cursos/:cursoId', {
-	            templateUrl : 'partials/fotografia.html',
+	        .when('cursos/:cursoId', {
+	            templateUrl : 'partials/detalle.html',
+	            controller  : 'cursosCtrl'
+	        })
+	        .when('/:cursoId', {
+	            templateUrl : 'partials/detalle.html',
 	            controller  : 'cursosCtrl'
 	        })
 	        .otherwise({
@@ -45,22 +53,25 @@
 		  };
 	});
 
-	app.controller('todosCursos',function($scope , $http){
+	app.controller('todosCursos',['$scope', '$http', function($scope , $http){
 		$http.get('js/cursos.json').success(function(data){
 			$scope.inlae = data;
 		});
-		
-	});
+	}]);
+	
 
-	/*var cursosCtrles = angular.module('cursosListas', [] );
-
-	cursosCtrles.controller('cursosCtrl', ['$scope', '$routeParams', '$http',
-	  function($scope, $routeParams, $http) {
-	    $http.get('js/cursos.json/' + $routeParams.cursoId + '.json').success(function(data) {
-	      $scope.cursoId = data;
-	    });
+	/*app.controller('cursosCtrl', ['$scope', '$routeParams',
+	  function($scope, $routeParams) {
+	    $scope.cursoId = $routeParams.cursoId;
   	}]);*/
 	
+	app.controller('cursosCtrl', ['$scope', '$routeParams', '$http',
+	  function($scope, $routeParams, $http) {
+	  	$scope.cursoId = $routeParams.cursoId;
+	    $http.get('cursos/' + $routeParams.cursoId + '.json' || '/' + $routeParams.cursoId + '.json' || 'home/' + $routeParams.cursoId + '.json').success(function(data) {
+	      $scope.curso = data;
+	    });
+	  }]);
 })();
 	
 
