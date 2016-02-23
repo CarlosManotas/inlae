@@ -4,9 +4,9 @@
           <h2>OFICIOS Y PROFESIONES</h2>
         </div>
         <div class="ed-item tablet-25 movil-50 aparecer-arriba" ng-repeat="oficio in inlae | filter:{tipo:'oficio'} | orderBy:'name':false">
-          <a href="#/cursos/{{oficio.id}}">
+          <a href="#/{{oficio.name}}/{{oficio.imagesUrl}}/{{oficio.id}}/{{oficio.objetivo | escape }}/{{oficio.relacion}}">
             <figure>
-              <img ng-src="{{oficio.imagesUrl}}">
+              <img ng-src="img/{{oficio.imagesUrl}}">
             </figure>
             <p class="aparecer-izquierda">
               <span class="icono-logo"></span> 
@@ -26,9 +26,9 @@
           <h2>ADMINISTRATIVO Y EMPRESARIAL</h2>
         </div>
         <div class="ed-item tablet-25 movil-50 aparecer-arriba" ng-repeat="administrativo in inlae | filter:{tipo:'administrativo'} | orderBy:'name':false">
-          <a href="#/cursos/{{administrativo.id}}">
+          <a href="#/{{administrativo.name}}/{{administrativo.imagesUrl}}/{{administrativo.objetivo | escape }}/{{administrativo.relacion}}">
             <figure>
-              <img ng-src="{{administrativo.imagesUrl}}">
+              <img ng-src="img/{{administrativo.imagesUrl}}">
             </figure>
             <p class="aparecer-izquierda">
               <span class="icono-logo"></span> 

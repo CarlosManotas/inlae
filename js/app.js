@@ -25,11 +25,11 @@
 	            templateUrl : 'partials/preguntas.html',
 	            controller  : 'todosCursos'
 	        })
-	        .when('cursos/:cursoTitle/:cursoImg/:cursoId/:cursoObjetivo', {
+	        .when('cursos/:cursoTitle/:cursoImg/:cursoId/:cursoObjetivo/:cursoRela', {
 	            templateUrl : 'partials/detalle.html',
 	            controller  : 'todosCursos'
 	        })
-	        .when('/:cursoTitle/:cursoImg/:cursoId/:cursoObjetivo', {
+	        .when('/:cursoTitle/:cursoImg/:cursoId/:cursoObjetivo/:cursoRela', {
 	            templateUrl : 'partials/detalle.html',
 	            controller  : 'todosCursos'
 	        })
@@ -61,7 +61,7 @@
 	  	$scope.cursoTitle = $routeParams.cursoTitle;
 	  	$scope.cursoId = $routeParams.cursoId;
 	  	$scope.cursoObjetivo = $routeParams.cursoObjetivo;
-
+	  	$scope.cursoRela = $routeParams.cursoRela;
 	}]);
 	
 	app.filter('escape', function() {
