@@ -2,7 +2,7 @@
       <div class="ed-container justify">
         <div class="ed-item web-65 no-padding">
 		  <div class="Titulo-curso" >
-            <h2>{{cursoTitle}}</h2>
+            <h2>{{cursoTitle | atrapado}}</h2>
           </div>
           <figure class="figure-detalle" >
             <img ng-src="img/{{cursoImg}}" alt="">
@@ -33,7 +33,7 @@
             </div>
             <p>seleccione su curso de Interés</p>
             <div class="input" ng-controller='todosCursos'>
-              <select ng-model=" formData.select" ng-options="item.name for item in inlae | filter:{{cursoId}} ">
+              <select ng-model=" formData.select" ng-options="item.name for item in inlae | filter:{id:cursoId} ">
                 <option value="" ng-if="false" ></option>
               </select>
             </div>

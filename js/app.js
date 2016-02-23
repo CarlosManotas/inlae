@@ -70,10 +70,6 @@
 	app.filter('atrapado',function(){
 		return window.decodeURIComponent;
 	});
-	/*app.controller('cursosCtrl', ['$scope', '$routeParams',
-	  function($scope, $routeParams) {
-	    $scope.cursoId = $routeParams.cursoId;
-  	}]);*/
 	
 })();
 	

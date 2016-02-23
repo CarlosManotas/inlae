@@ -2862,7 +2862,12 @@ figure {
   width: 100%;
   overflow: hidden; }
   #seccion1 figure.figure-detalle img {
-    width: 100%; }
+    height: 100%;
+    width: auto; }
+    @media screen and (min-width: 480px) {
+      #seccion1 figure.figure-detalle img {
+        width: 100%;
+        height: auto; } }
 
 #seccion1 .Titulo-curso {
   text-transform: uppercase; }

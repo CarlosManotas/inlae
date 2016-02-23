@@ -3,7 +3,7 @@
 		"name": "Analista en Recursos Humanos",
 		"imagesUrl": "analista-rrhh.jpg",
 		"link": "analista-rrhh.html",
-		"relacion": "2",
+		"relacion": "b2",
 		"id" : "a1",
 		"objetivo": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id omnis sunt amet cum eaque numquam quae neque necessitatibus nesciunt, praesentium asperiores eos ratione rerum illo tempora laudantium expedita quis harum.",
 		"tipo": "administrativo"
@@ -39,7 +39,7 @@
 		"name": "Secretariado Ejecutivo",
 		"imagesUrl": "sec-ejecutivo.jpg",
 		"link": "sec-ejecutivo.html",
-		"relacion": "2",
+		"relacion": "b2",
 		"id" : "a5",
 		"objetivo": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure repudiandae, deserunt fuga facere magnam inventore in aut est laboriosam fugiat pariatur enim consequuntur. Rerum iste nihil iure magni, qui quasi?",
 		"tipo": "administrativo"
@@ -48,7 +48,7 @@
 		"name": "Asistente Contable",
 		"imagesUrl": "asist-contable.jpg",
 		"link": "asist-contable.html",
-		"relacion": "2",
+		"relacion": "b2",
 		"id" : "a6",
 		"objetivo": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis quos aperiam, quisquam dolor totam dolore dolores, consequatur nihil hic eos perferendis voluptate deleniti doloribus! Impedit accusamus minima, aliquid placeat culpa!",
 		"tipo": "administrativo"
@@ -57,7 +57,7 @@
 		"name": "Administración de Empresas",
 		"imagesUrl": "adm-empresas.jpg",
 		"link": "adm-empresas.html",
-		"relacion": "2",
+		"relacion": "b2",
 		"id" : "a7",
 		"objetivo": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit nobis ducimus explicabo, dignissimos dolor ratione sunt distinctio, cumque illum debitis expedita iusto, inventore minima suscipit voluptates. Rem libero ullam delectus.",
 		"tipo": "administrativo"
