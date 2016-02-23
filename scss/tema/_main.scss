@@ -20,16 +20,15 @@
 		}
 	}
 	figure.figure-detalle{
-		height: 400px;
 		width: 100%;
 		overflow:hidden;
+		line-height: 0;
 		img{
-			height:100%;
-			width: auto;
-			@include desde(movil){
-				width: 100%;
-				height:auto;
-			}
+			width: 100%;
+
+		}
+		@include desde(movil){
+			height: 400px;
 		}
 	}
 	.Titulo-curso{

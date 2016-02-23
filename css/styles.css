@@ -2858,16 +2858,14 @@ figure {
         background-image: url(../img/institucion.jpg); } }
 
 #seccion1 figure.figure-detalle {
-  height: 400px;
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  line-height: 0; }
   #seccion1 figure.figure-detalle img {
-    height: 100%;
-    width: auto; }
-    @media screen and (min-width: 480px) {
-      #seccion1 figure.figure-detalle img {
-        width: 100%;
-        height: auto; } }
+    width: 100%; }
+  @media screen and (min-width: 480px) {
+    #seccion1 figure.figure-detalle {
+      height: 400px; } }
 
 #seccion1 .Titulo-curso {
   text-transform: uppercase; }
