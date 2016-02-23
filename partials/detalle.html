@@ -102,7 +102,7 @@
             </div>
             <p>seleccione su curso de Interés</p>
             <div class="input aparecer-arriba" ng-controller='todosCursos'>
-              <select ng-model=" formData.select" ng-options="item.name for item in inlae | filter:{{cursoId}} ">
+              <select ng-model=" formData.select" ng-options="item.name for item in inlae | filter:{id:cursoId} ">
                 <option value="" ng-if="false" ></option>
               </select>
             </div>
