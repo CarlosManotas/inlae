@@ -26,7 +26,7 @@
           <h2>ADMINISTRATIVO Y EMPRESARIAL</h2>
         </div>
         <div class="ed-item tablet-25 movil-50 aparecer-arriba" ng-repeat="administrativo in inlae | filter:{tipo:'administrativo'} | orderBy:'name':false">
-          <a href="#/{{administrativo.name}}/{{administrativo.imagesUrl}}/{{administrativo.objetivo | escape }}/{{administrativo.relacion}}">
+          <a href="#/{{administrativo.name}}/{{administrativo.imagesUrl}}/{{administrativo.id}}/{{administrativo.objetivo | escape }}/{{administrativo.relacion}}">
             <figure>
               <img ng-src="img/{{administrativo.imagesUrl}}">
             </figure>
