@@ -7,18 +7,13 @@
 		background-position: 50% 20%;
 		background-size: cover;
 
-		&.fotografia{
-			background-image: url(../img/small/fotografia.jpg);
-		}
 		&.inlae{
 			background-image: url(../img/small/institucion.jpg);
 		}
 		
 		@include desde(movil){
 			background-image: url("../img/home.jpg");
-			&.fotografia{
-				background-image: url(../img/fotografia.jpg);
-			}
+			
 			&.inlae{
 				background-image: url(../img/institucion.jpg);
 			}

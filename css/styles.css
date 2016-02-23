@@ -2849,15 +2849,11 @@ figure {
   background-image: url(../img/mobile-home.jpg);
   background-position: 50% 20%;
   background-size: cover; }
-  #seccion1 figure.figure-home.fotografia {
-    background-image: url(../img/small/fotografia.jpg); }
   #seccion1 figure.figure-home.inlae {
     background-image: url(../img/small/institucion.jpg); }
   @media screen and (min-width: 480px) {
     #seccion1 figure.figure-home {
       background-image: url("../img/home.jpg"); }
-      #seccion1 figure.figure-home.fotografia {
-        background-image: url(../img/fotografia.jpg); }
       #seccion1 figure.figure-home.inlae {
         background-image: url(../img/institucion.jpg); } }
 
