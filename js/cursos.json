@@ -75,7 +75,7 @@
 		"name": "Analista en Gestión Rural",
 		"imagesUrl": "gest-rural.jpg",
 		"link": "gest-rural.html",
-		"relacion": "1",
+		"relacion": "a1",
 		"id" : "a9",
 		"objetivo": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque nesciunt eveniet cum, officiis asperiores et ea, alias vitae tenetur quibusdam dignissimos laboriosam commodi, dolorem. Laudantium qui placeat rerum totam odit!",
 		"tipo": "administrativo"
@@ -174,7 +174,7 @@
 		"name": "Jardinería",
 		"imagesUrl": "jardineria.jpg",
 		"link": "jardineria.html",
-		"relacion": "1",
+		"relacion": "a1",
 		"id" : "20",
 		"objetivo": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid vitae nemo doloremque magni quas eum minus quibusdam omnis. Quas quia dolorum fuga. Doloremque illo, laudantium excepturi repellendus labore necessitatibus repudiandae!",
 		"tipo": "oficio"
@@ -183,7 +183,7 @@
 		"name": "Apicultura",
 		"imagesUrl": "apicultura.jpg",
 		"link": "apicultura.html",
-		"relacion": "1",
+		"relacion": "a1",
 		"id" : "21",
 		"objetivo": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium ea deleniti enim quae laborum accusamus reiciendis iusto tenetur provident tempore quam deserunt iste pariatur, placeat laboriosam vel adipisci quisquam officia.",
 		"tipo": "oficio"
@@ -291,7 +291,7 @@
 		"name": "Control de Plagas en Jardinería",
 		"imagesUrl": "ctrol-plagas.jpg",
 		"link": "ctrol-plagas.html",
-		"relacion": "1",
+		"relacion": "a1",
 		"id" : "33",
 		"objetivo": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam consequuntur provident libero quae. Inventore vero, itaque similique dignissimos libero harum ab pariatur, voluptatibus quam in mollitia illum odit odio officia.",
 		"tipo": "oficio"
